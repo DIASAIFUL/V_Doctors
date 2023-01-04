@@ -54,6 +54,8 @@ if (!isset($_SESSION['user_name'])) {
                     <a href="../doctor/signup.php" class="list-group-item list-group-item-action py-2 ripple"><i
                             class="fas fa-chart-bar fa-fw me-3"></i><span>Add New Doctor</span></a>
 
+                    <a href="admin_course.php" class="list-group-item list-group-item-action py-2 ripple"><i
+                            class="fas fa-chart-bar fa-fw me-3"></i><span>Add New Course</span></a>
 
                     <a href="view_specialized.php" class="list-group-item list-group-item-action py-2 ripple"><i
                             class="fas fa-calendar fa-fw me-3"></i><span>Specialized</span></a>

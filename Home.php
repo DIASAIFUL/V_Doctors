@@ -17,12 +17,13 @@ include 'config.php';
 <title> carefree care website </title>
 <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 <link rel="stylesheet" href="libs/bower/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="libs/bower/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body style="background-color:rgb(255, 255, 255);">
@@ -39,7 +40,7 @@ include 'config.php';
             <b><li><a href="Course.php">Course</a></li></b>
             <b><li><a href="appointment.php">Appointment</a></li></b>
             <b><li><a href="check-appointment.php">Appointment History</a></li></b>
-            <b><li><a href="login.php" ><i class="fas fa-user fa-fw" class="show_username"></i> <?php echo  $_SESSION['username']; ?></a> </li></b>
+            <b><li><a href="login.php" >Profile <?php echo  $_SESSION['username']; ?></a> </li></b>
           
 
             
@@ -101,5 +102,6 @@ include 'config.php';
   </div>
 </section>
 
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </body>
 </html>
