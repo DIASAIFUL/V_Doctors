@@ -48,7 +48,6 @@ include 'config.php';
 
 <div class="container">
 
-
     <!-- The Modal -->
     <div class="modal" id="myModal">
         <div class="modal-dialog">
@@ -113,7 +112,7 @@ include 'config.php';
 <main style="margin-top: 58px">
     <div class=" col-md-42 container pt-4">
 
-        <h1>Courses </h1>
+        <h1>Courses</h1>
 
         <div class="col-md-42 text-right">
             <button class="btn btn-success" data-toggle="modal" data-target="#myModal"> Add</button>
@@ -126,10 +125,10 @@ include 'config.php';
                 <tr>
                     <th class="bg-light border-3">SI No</th>
                     <th class="bg-light border-3"> Image</th>
-                    <th class="bg-light border-3">Title</th>
-                    <th class="bg-light border-3">Content</th>
-                    <th class="bg-light border-3">URL</th>
-                    <th class="bg-light border-3">Create Date</th>
+                    <th class="bg-light border-3"> Title</th>
+                    <th class="bg-light border-3"> Content</th>
+                    <th class="bg-light border-3"> URL</th>
+                    <th class="bg-light border-3"> Create Date</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -139,9 +138,9 @@ include 'config.php';
                 <!---- connect with datadase------>
 
                 <?php
-            // include 'config.php';
+           
 
-            $sel= "SELECT * FROM  course";
+            $sel= "SELECT * FROM course";
             $query=$conn-> query($sel);
 
             while($row=$query->fetch_assoc()){
@@ -155,13 +154,13 @@ include 'config.php';
                     <td class="bg-light border-2"><?php echo $row['title']; ?></td>
                     <td class="bg-light border-2"><?php echo $row['description']; ?></td>
                     <td class="bg-light border-2"><?php echo $row['URL']; ?></td>
-                    <td class="bg-light border-2"><?php echo $row['createDate']; ?></td>
+                    <td class="bg-light border-2"><?php echo $row['CreateDate']; ?></td>
 
 
 
                     <td>
 
-                        <!-- <a class="btn btn-danger" href="delete.php?id=<?php echo $row['id'];?>">DELETE</a> -->
+                        <a class="btn btn-danger" href="delete.php?id=<?php echo $row['id'];?>">DELETE</a>
                     </td>
                 </tr>
 
@@ -173,10 +172,11 @@ include 'config.php';
             <tfoot class="bg-light border-3">
                 <tr>
                     <th class="bg-light border-3">SI No</th>
-                    <th class="bg-light border-3">Blog Image</th>
-                    <th class="bg-light border-3">Blog Title</th>
-                    <th class="bg-light border-3">Blog Content</th>
-                    <th class="bg-light border-3">Blog Create Date</th>
+                    <th class="bg-light border-3"> Image</th>
+                    <th class="bg-light border-3"> Title</th>
+                    <th class="bg-light border-3"> Content</th>
+                    <th class="bg-light border-3"> URL</th>
+                    <th class="bg-light border-3"> Create Date</th>
                     <th>Action</th>
                 </tr>
             </tfoot>
