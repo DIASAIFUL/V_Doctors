@@ -26,7 +26,8 @@
     <b><h1 style="color:blue;"> Courses We Offer</h1></b>
    <div class="row">
       <div class="service-col">
-        <img src="images/smart.png">
+        <!-- <img src="images/smart.png"> -->
+        <img src="<?php echo $row['image']; ?>">
         <h3> Smart Parenting </h3>
         <p>By Ayesha Siddika</p>
         <a href="https://smartparenting.family/bn/courses/children-brain-development/?fbclid=IwAR3UZrTrIUmG2Nl6cGpHeWe8eL1D95DCeA1nVmR_boqPDoL3sL_JM6AtTpY"><button class="button">Buy This Course</button></a>

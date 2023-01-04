@@ -64,6 +64,16 @@ include 'config.php';
         echo "Error deleting record";
     }
 
-    
+    $id=$_GET['id'];
+
+    // sql to delete a record
+    $sql = "DELETE FROM course WHERE ID='$id'";
+
+    if ($conn->query($sql) === TRUE) {
+       header("Location: admin_course.php");
+    } else {
+        echo "Error deleting record";
+    }
+
 
 ?>
